@@ -1,0 +1,13 @@
+[package]
+name = "driver-workbench"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Interactive CLI & Web Server runner for Industrial PLC Driver Workbench"
+
+[dependencies]
+mm-drivers = { path = "../mm-drivers" }
+plc-common = { path = "../../../plc-common" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tokio = { workspace = true }

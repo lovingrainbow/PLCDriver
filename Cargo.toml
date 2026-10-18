@@ -1,0 +1,21 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/mm-drivers",
+    "crates/driver-workbench",
+    "src-tauri",
+]
+
+[workspace.package]
+version = "1.0.0"
+edition = "2021"
+license = "MIT"
+authors = ["ArgonGUI Team", "PLCDriver Authors"]
+
+[workspace.dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde_yaml_ng = "0.10"
+tokio = { version = "1.40", features = ["rt-multi-thread", "sync", "time", "macros", "net", "io-util"] }
+thiserror = "1.0"
+tauri = { version = "2.0", features = [] }
