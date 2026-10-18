@@ -6,7 +6,7 @@ license.workspace = true
 description = "Tauri 2.0 Desktop Application & IPC Commands for Industrial PLC Driver"
 
 [dependencies]
-plc-common = { path = "../../plc-common" }
+plc-common = { git = "https://github.com/lovingrainbow/plc-common", tag = "v0.1.0" }
 mm-drivers = { path = "../crates/mm-drivers" }
 serde = { workspace = true }
 serde_json = { workspace = true }
